@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shotcut icon" href="./images/logo-.png">
+    <title>Adarsh GS</title>
+    <script src="https://kit.fontawesome.com/de9793af4e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="./images/logo-.png" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software developer</p>
+                <h1>Hi, I'm <span>Adarsh G S</span><br>From Trivandrum</h1>
+            </div>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user-.png" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I am Adarsh ​​GS, a passionate and dedicated software developer focused on creating innovative solutions and improving user experiences. Currently, I am studying at Brocamp where I have developed two public website clones that replicate platforms like YouTube and Zomato.
+
+                        My expertise is in HTML and CSS and I am now moving to Bootstrap and JavaScript to develop my skills. After 5 years my goal is to become a senior software engineer in a reputed company like google or amazon.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Html and CSS</span><br>Basics of HTML and CSS</li>
+                            <li><span>Website Development</span><br>Two public website clone</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022</span><br>Designing Web interfaces</li>
+                            <li><span>2023</span><br>Mini project using python and mysql</li>
+                            <li><span>2024</span><br>Two public website clone</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services  -->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design using HTML and CSS. I already created two websites and i currently focus in Bootsrap and Javascript</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Front-end Design and Development</h2>
+                    <p>I specialize in designing and developing user-friendly interfaces using HTML and CSS.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>Upcoming Services</h2>
+                    <p>I am expanding my skill set to include Bootstrap and JavaScript, enabling me to offer even more dynamic and responsive web solutions.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1-.png" alt="work image 1">
+                    <div class="layer">
+                        <h3>Zomato Clone Website</h3>
+                        <p>
+                            It's responsive website and it's looks like Zomato orginal website. 
+                        </p>
+                        <a href="https://adarsh-gs.github.io/Zomato/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2-.png" alt="work image 2">
+                    <div class="layer">
+                        <h3>Youtube Clone Website</h3>
+                        <p>
+                            I am using html and css to create this website. It's looks like orginal youtube website
+                        </p>
+                        <a href="https://adarsh-gs.github.io/Youtube/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> adarshgsind2005@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 9037395029</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="submit-form" action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> It's made by Adarsh</p>
+        </div>
+    </section>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function closeMenu(){
+            sidemenu.style.right = "-200px"
+        }
+        function openMenu(){
+            sidemenu.style.right = "0"
+        }
+    </script>
+    <script>
+        $("#submit-form").submit((e) => {
+          e.preventDefault();
+          $.ajax({
+            url: "https://script.google.com/macros/s/AKfycbyZKd-ZM0ZK-ZCFEOFX3WYzyUXSXQfTcSIbaxjpBJH4AUecxb8Tj4av9iBpaZAq1MVp/exec",
+            data: $("#submit-form").serialize(),
+            method: "post",
+            success: function (response) {
+              // Assuming msg is an element in your DOM
+              let msg = document.getElementById('msg'); 
+              msg.innerHTML = "Message sent successfully";
+              setTimeout(function () {
+                msg.innerHTML = "";
+              }, 5000);
+              
+              // Reset the form
+              $("#submit-form")[0].reset();
+            },
+            error: function (err) {
+              alert("Something went wrong");
+            }
+          });
+        });
+      </script>
+  
+</body>
+</html>
